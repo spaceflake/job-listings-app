@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body class="bg-slate-50">
+    <header class="bg-[url('./images/bg-header-desktop.svg')]">
+      <h1
+        class="text-5xl text-green-700 text-center font-black p-5 mb-16 max-w-4xl m-auto backdrop-blur-sm backdrop-opacity-20 bg-slate-50"
+      >
+        Job Listings
+      </h1>
+    </header>
+    <main class="max-w-4xl m-auto flex flex-col gap-2">
+      <template id="card">
+        <article
+          class="flex flex-wrap gap-4 items-center p-4 bg-white hover:shadow-lg hover:scale-105 hover:border-l-8 hover:border-green-600 transition-all ease-in-out duration-200"
+        >
+          <!-- Item Start -->
+          <img src="./src/images/photosnap.svg" alt="" class="rounded-full" />
+          <div class="flex flex-col flex-wrap mr-auto">
+            <div class="flex gap-2">
+              <span id="companyName" class="text-green-600 font-bold text-sm"
+                >Photosnap</span
+              >
+              <span
+                id="new"
+                class="bg-green-600 text-white uppercase rounded-full py-1 px-2 text-sm"
+              ></span>
+              <span
+                id="featured"
+                class="bg-black text-white text-sm uppercase py-1 px-2 rounded-full"
+                >Featured</span
+              >
+            </div>
+
+            <h3 id="position" class="text-lg font-bold text-green-600">
+              Senior Frontend Developer
+            </h3>
+            <div class="divide-x divide-solid space-x-2">
+              <span id="postedAt">1d ago</span>
+              <span id="contract">Full Time</span>
+              <span id="location">USA only</span>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <!-- Role -->
+            <span
+              id="role"
+              class="bg-green-50 text-sm p-2 rounded-md text-green-600 font-semibold hover:bg-green-800 hover:text-white"
+              >Frontend</span
+            >
+            <!-- Level -->
+            <span
+              id="level"
+              class="bg-green-50 text-sm p-2 rounded-md text-green-600 font-semibold hover:bg-green-800 hover:text-white"
+              >Senior</span
+            >
+            <!-- Languages -->
+            <div id="langContainer" class="lang flex gap-2">
+              <!-- Injected by script -->
+            </div>
+            <div id="toolsContainer" class="lang flex gap-2">
+              <!-- Injected by script -->
+            </div>
+          </div>
+          <!-- Item End -->
+        </article>
+      </template>
+    </main>
+  </body>
+</html>
